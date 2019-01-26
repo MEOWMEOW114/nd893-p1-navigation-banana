@@ -106,3 +106,6 @@ ENV/
 #app
 .app
 .zip
+
+Banana.app
+Banana.*
