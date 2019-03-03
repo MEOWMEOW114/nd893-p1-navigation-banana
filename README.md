@@ -53,3 +53,16 @@ You need only select the environment that matches your operating system:
 Then, place the file in the `p1_navigation/` folder in the DRLND GitHub repository, and unzip (or decompress) the file.  Next, open `Navigation_Pixels.ipynb` and follow the instructions to learn how to use the Python API to control the agent.
 
 (_For AWS_) If you'd like to train the agent on AWS, you must follow the instructions to [set up X Server](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above.
+
+
+### References
+1.  Double DQN (DDQN)  https://arxiv.org/abs/1509.06461 Deep Reinforcement Learning with Double Q-learning
+3. https://arxiv.org/abs/1511.05952 Prioritized Experience Replay
+2.  Dueling DQN  https://arxiv.org/pdf/1511.06581.pdf Dueling Network Architectures for Deep Reinforcement Learning
+
+### Resources
+
+- [Human-Level Control through Deep Reinforcement Learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+- [Deep Reinforcement Learning with Double Q-Learning](https://arxiv.org/abs/1509.06461)
+- [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581)
+- [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
