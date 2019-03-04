@@ -30,7 +30,8 @@ class DDQNAgent(DQNAgent):
             action_size (int): dimension of each action
             seed (int): random seed
         """
-        super(DQNAgent, self).__init__(state_size, action_size, seed)
+        super(DDQNAgent, self).__init__(state_size, action_size, seed)
+        # super(DQNAgent, self).__init__(state_size, action_size, seed)
         #
         # # Replay memory
         # self.memory = ReplayBuffer(action_size, BUFFER_SIZE, BATCH_SIZE, seed)
@@ -68,7 +69,7 @@ class DDQNAgent(DQNAgent):
         self.optimizer.step()
 
         # ------------------- update target network ------------------- #
-
+        self.soft_update(self.qnetwork_local, self.qnetwork_target, TAU)
 
 class ReplayBuffer:
     """Fixed-size buffer to store experience tuples."""
